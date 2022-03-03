@@ -9,20 +9,20 @@ class SQRServiceTest {
     @Test
     void showThreeSquares() {
         SQRService sqrService = new SQRService();
-        int lowlimit = 200;
-        int uplimit = 300;
+        int lowLimit = 200;
+        int upLimit = 300;
         int expected = 3;
-        int actual = sqrService.findSquar(lowlimit, uplimit);
+        int actual = sqrService.findSquar(lowLimit, upLimit);
         assertEquals(expected, actual);
     }
 
     @Test
     void showEightSquares() {
         SQRService sqrService = new SQRService();
-        int lowlimit = 100;
-        int uplimit = 300;
+        int lowLimit = 100;
+        int upLimit = 300;
         int expected = 8;
-        int actual = sqrService.findSquar(lowlimit, uplimit);
+        int actual = sqrService.findSquar(lowLimit, upLimit);
         assertEquals(expected, actual);
 
     }

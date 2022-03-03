@@ -2,18 +2,14 @@ package ru.netology.sqr;
 
 public class SQRService {
 
-    public int findSquar(int lowlimit, int uplimit) {
+    public int findSquar(int lowLimit, int upLimit) {
         int counter = 0;
-        int hassquar;
         for (int i = 10; i <= 99; i++) {
-            if (i * i >= lowlimit && i * i <= uplimit) {
-                hassquar = 1;
-            } else {
-                hassquar = 0;
-            }
-            counter += hassquar;
+            if (i * i >= lowLimit && i * i <= upLimit) counter++;
+
         }
         return counter;
     }
 
 }
+
